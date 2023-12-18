@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <style>
+        .navbar-start .navbar-item:first-child {
+            margin-right: 40%;
+            margin-left: 1rem;
+        }
+        .navbar-menu .navbar-item {
+            padding-left: 1.5em; 
+            padding-right: 1.5em;
+        }
+    </style>
+
+</head>
+<body>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar has-background-info" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="index.html" class="navbar-item is-size-5">Home</a>
+                    <a href="projects.html" class="navbar-item is-size-5">Projects</a>
+                    <a href="education.html" class="navbar-item is-size-5">Education</a>
+                    <a href="volunteer.html" class="navbar-item is-size-5">Volunteer Work</a>
+                    <a href="socials.html" class="navbar-item is-size-5">Socials</a>
+                </div>
+            </div>
+        </nav>
+
+
+    <!-- Main Heading -->
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered has-text-info">Below are some of the volunteer projects I've been lucky enough to be a part of:</h1>
+
+            <!-- Content -->
+            <div class="box">
+                <div class="content">
+                    <!-- Video Container -->
+                    <div class="block">
+                        <video width="480" height="270" controls loop muted autoplay class="content__video">
+                            <source src="Images/Video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <!-- Volunteer Info -->
+                    <h3 class="subtitle">Care Epilepsy Ethiopia</h3>
+                    <p>CareEpilepsy ETHIOPIA is a branch of the CareEpilepsy, registered on the 3rd February 2015 to work in Ethiopia. 
+                    My duties involved contributing to patient care, cleaning, and research projects. 
+                    More about CareEpilepsy <a href="http://care-epilepsy.org/careepilepsy-ethiopia/" class="has-text-info">here</a>.</p>
+
+                    <h3 class="subtitle">Ethiopian Cancer Society</h3>
+                    <p>The Ethiopian Cancer Society fights for a great cause. I learned about cancer treatment breakthroughs and helped patients recover.
+                    My duties included research and general tasks assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="button is-info is-rounded" id="backToTop" title="Go to top">&#10580;</button>
+
+    <!-- Footer -->
+    <footer class="footer has-background-dark" style="padding: 2rem 0;">
+        <div class="content has-text-centered has-text-white">
+            <p>&#169; 2023 Nobel Tibebe. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- Bulma's JavaScript for Navbar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('.navbar-menu');
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+</html>

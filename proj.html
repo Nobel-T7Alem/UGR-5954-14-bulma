@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <style>
+        .navbar-start .navbar-item:first-child {
+            margin-right: 40%;
+            margin-left: 1rem;
+        }
+        .navbar-menu .navbar-item {
+            padding-left: 1.5em; 
+            padding-right: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar has-background-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item is-size-5">Home</a>
+                <a href="projects.html" class="navbar-item is-size-5">Projects</a>
+                <a href="education.html" class="navbar-item is-size-5">Education</a>
+                <a href="volunteer.html" class="navbar-item is-size-5">Volunteer Work</a>
+                <a href="socials.html" class="navbar-item is-size-5">Socials</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Heading -->
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered has-text-info">These are some of the projects I've worked on.</h1>
+
+            <!-- Projects -->
+            <div class="columns is-multiline">
+                <!-- Project 1 -->
+                <div class="column is-full">
+                    <div class="box is-flex">
+                        <div style="flex: 2;">
+                            <h2 class="subtitle is-size-3 is-size-6-mobile is-size-6-tablet is-size-5-desktop">Berenda Games</h2>
+                            <p class="is-size-5 is-size-7-mobile is-size-6-tablet is-size-5-desktop">
+                                I am the Co-Founder of Berenda Games. The brand makes handmade board games and toys with a traditional Ethiopian spin. It aims to encourage students to spend less time on their digital devices and enjoy playing games with their loved ones instead.
+                            </p>
+                        </div>
+                        <figure class="image is-128x128-mobile is-128x128-tablet is-256x256-desktop" style="flex: 1;">
+                            <img src="Images/Berenda-01.png" alt="Berenda">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="column is-full">
+                    <div class="box is-flex">
+                        <div style="flex: 2;">
+                            <h2 class="subtitle is-size-3 is-size-6-mobile is-size-6-tablet is-size-5-desktop">EthioFur Copywriting</h2>
+                            <p class="is-size-5 is-size-7-mobile is-size-6-tablet is-size-5-desktop">
+                                EthioFur is an up-coming furniture brand that aims to make sleek and minimal home and office furniture affordable and accessible to the masses. I am the head of SMMA and Copywriting for them.
+                            </p>
+                        </div>
+                        <figure class="image is-128x128-mobile is-128x128-tablet is-256x256-desktop" style="flex: 1;">
+                            <img src="Images/Ethiofur.jpg" alt="EthioFur">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="column is-full">
+                    <div class="box is-flex">
+                        <div style="flex: 2;">
+                            <h2 class="subtitle is-size-3 is-size-6-mobile is-size-6-tablet is-size-5-desktop">The Idea Vault Website</h2>
+                            <p class="is-size-5 is-size-7-mobile is-size-6-tablet is-size-5-desktop">
+                                The Idea Vault is an Established SMMA agency based in Ethiopia and Kenya. They have worked with brands such as Chakka Origins and Sheraton Hotel. I made a website for them.
+                            </p>
+                        </div>
+                        <figure class="image is-128x128-mobile is-128x128-tablet is-256x256-desktop" style="flex: 1;">
+                            <img src="Images/Vault-01-01.png" alt="The Idea Vault">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="button is-info is-rounded" id="backToTop" title="Go to top">&#10580;</button>
+
+    <!-- Footer -->
+    <footer class="footer has-background-dark" style="padding: 2rem 0;">
+        <div class="content has-text-centered has-text-white">
+            <p>&#169; 2023 Nobel Tibebe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bulma's JavaScript for Navbar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('.navbar-menu');
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+</html>

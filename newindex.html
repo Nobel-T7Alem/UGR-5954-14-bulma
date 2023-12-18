@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <style>
+        .navbar-start .navbar-item:first-child {
+            margin-right: 40%;
+            margin-left: 1rem;
+        }
+        .navbar-menu .navbar-item {
+            padding-left: 1.5em; 
+            padding-right: 1.5em;
+        }
+        .custom-size img {
+        width: 40%;  
+        height: auto;  
+        }
+    </style>
+
+</head>
+<body>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar has-background-info" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="index.html" class="navbar-item is-size-5">Home</a>
+                    <a href="projects.html" class="navbar-item is-size-5">Projects</a>
+                    <a href="education.html" class="navbar-item is-size-5">Education</a>
+                    <a href="volunteer.html" class="navbar-item is-size-5">Volunteer Work</a>
+                    <a href="socials.html" class="navbar-item is-size-5">Socials</a>
+                </div>
+            </div>
+        </nav>
+
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline" style="text-align: center;">
+                <!-- Portrait and Personal Info -->
+                <div class="column">
+                    <div class="content">
+                        <div class="is-flex is-justify-content-center is-align-items-center" style="margin-bottom: 7%;">
+                            <figure class="image custom-size">
+                                <img src="Images/Portrait.png" alt="Portrait" class="is-rounded" >
+                            </figure>
+                            </div>
+                        <p>"If, at first, you do not succeed, call it version 1.0." ― Khayri R.R. Woulfe</p>
+                        <p>Hello there! My name Is Nobel Tibebe. I am a Software Engineering student.</p>
+                        <p>This Document is a portfolio of all my projects and experiences.</p>
+                        <p>Feel free to Look around.</p>
+                        <p>You can find links to my socials, projects and much more from the Navigation bar.</p>
+                        <article class="panel is-info">
+  <p class="panel-heading">
+    Here are some of the skills I have developed over my programming journey:
+  <div class="panel-block">
+    <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      <span class="tag is-success is-size-5">Digital Marketing</span>
+    </a>
+  </div>
+
+  <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+    <span class="tag is-primary is-size-5">Web Development</span>
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+    <span class="tag is-success is-size-5">Copywriting</span>
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+    <span class="tag is-info is-size-5">Graphic Design</span>
+  </a>
+</article>
+                    
+                        <div class="content">
+                            <p>Click this link to view my projects</p>
+                            <a href="Projects.html" class="button is-link">Projects</a>
+                        </div>
+                    </div>
+                </div>
+
+               
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="button is-info is-rounded" id="backToTop" title="Go to top">&#10580;</button>
+
+    <!-- Footer -->
+    <footer class="footer has-background-dark" style="padding: 2rem 0;">
+        <div class="content has-text-centered has-text-white">
+            <p>&#169; 2023 Nobel Tibebe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bulma's JavaScript for Navbar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('.navbar-menu');
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socials | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <style>
+        .navbar-start .navbar-item:first-child {
+            margin-right: 40%;
+            margin-left: 1rem;
+        }
+        .navbar-menu .navbar-item {
+            padding-left: 1%; 
+            padding-right: 1%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar has-background-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item is-size-3-desktop">Home</a>
+                <a href="projects.html" class="navbar-item is-size-3-desktop">Projects</a>
+                <a href="education.html" class="navbar-item is-size-3-desktop">Education</a>
+                <a href="volunteer.html" class="navbar-item is-size-3-desktop">Volunteer Work</a>
+                <a href="socials.html" class="navbar-item is-size-3-desktop">Socials</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Heading -->
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered has-text-info is-size-2-touch">Let's get in touch!</h1>
+
+            <!-- Contact Form -->
+            <div class="box">
+                <div class="field">
+                    <label class="label is-size-4">Enter message:</label>
+                    <div class="control">
+                        <textarea class="textarea is-size-3" placeholder="Enter message"></textarea>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label is-size-4">Send me a message!</label>
+                    <div class="control">
+                        <input class="input is-size-3" type="text" placeholder="Send me a message!">
+                    </div>
+                </div>
+
+                <div class="control">
+                    <button class="button is-info is-size-3">Submit</button>
+                </div>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="columns is-multiline is-mobile is-centered">
+                <div class="column is-one-quarter-desktop is-half-mobile has-text-centered">
+                    <figure class="image is-64x64">
+                        <img src="Images/Instagram.png" alt="Instagram">
+                    </figure>
+                    <p class="is-size-4-desktop is-size-6-mobile">@nobel_tibebe251</p>
+                </div>
+                <div class="column is-one-quarter-desktop is-half-mobile has-text-centered">
+                    <figure class="image is-64x64">
+                        <img src="Images/Twitter.png" alt="Twitter">
+                    </figure>
+                    <p class="is-size-4-desktop is-size-6-mobile">@Shero_digger</p>
+                </div>
+                <div class="column is-one-quarter-desktop is-half-mobile has-text-centered">
+                    <figure class="image is-64x64">
+                        <img src="Images/email.png" alt="Email">
+                    </figure>
+                    <p class="is-size-4-desktop is-size-6-mobile">berenda@gmail.com</p>
+                </div>
+                <div class="column is-one-quarter-desktop is-half-mobile has-text-centered">
+                    <figure class="image is-64x64">
+                        <img src="Images/Linked In.png" alt="LinkedIn">
+                    </figure>
+                    <p class="is-size-4-desktop is-size-6-mobile">nobeltibebe@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="button is-info is-rounded is-size-6" id="backToTop" title="Go to top">&#10580;</button>
+    <!-- Footer -->
+    <footer class="footer has-background-dark" style="padding: 2rem 0;">
+        <div class="content has-text-centered has-text-white">
+            <p class="is-size-4">&#169; 2023 Nobel Tibebe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bulma's JavaScript for Navbar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('.navbar-menu');
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+</html>

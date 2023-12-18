@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <style>
+        .navbar-start .navbar-item:first-child {
+            margin-right: 40%;
+            margin-left: 1rem;
+        }
+        .navbar-menu .navbar-item {
+            padding-left: 1.5em; 
+            padding-right: 1.5em;
+        }
+
+        .logo-img {
+            max-width: 10rem;
+            max-height: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar has-background-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item is-size-5">Home</a>
+                <a href="projects.html" class="navbar-item is-size-5">Projects</a>
+                <a href="education.html" class="navbar-item is-size-5">Education</a>
+                <a href="volunteer.html" class="navbar-item is-size-5">Volunteer Work</a>
+                <a href="socials.html" class="navbar-item is-size-5">Socials</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Heading -->
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered has-text-info">Here is a brief overview of my education:</h1>
+
+            <!-- Education Items -->
+            <div class="columns is-multiline">
+                <!-- Education Item 1 -->
+                <div class="column is-full">
+                    <div class="row">
+                        <div class="box is-flex">
+                            <div style="flex: 2;">
+                                <h2 class="subtitle is-size-3 is-size-6-mobile is-size-6-tablet is-size-5-desktop">&#10148; High School</h2>
+                                <p class="is-size-5 is-size-7-mobile is-size-6-tablet is-size-5-desktop">
+                                    &#9900; St.Joseph School, 12th Grade Graduate (Natural Science).<br>
+                                    &#9900; 4.0 GPA<br>
+                                    &#9900; Graduated with Great Distinction.<br>
+                                    &#9900; President of Student body and STEM Club.
+                                </p>
+                            </div>
+                            <figure class="image is-128x128" style="flex: 1;">
+                                <img src="Images/School Logo.jpg" alt="St Joseph School" class="logo-img">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div class="column is-full">
+                    <div class="row">
+                        <div class="box is-flex">
+                            <div style="flex: 2;">
+                                <h2 class="subtitle is-size-3 is-size-6-mobile is-size-6-tablet is-size-5-desktop">&#10148; University</h2>
+                                <p class="is-size-5 is-size-7-mobile is-size-6-tablet is-size-5-desktop">
+                                    &#9900; 3rd Year, Software Engineering.<br>
+                                    &#9900; 3.8 GPA<br>
+                                    &#9900; A2SV Front-runner<br>
+                                    &#9900; On track to becoming Batch Valedictorian.
+                                </p>
+                            </div>
+                            <figure class="image is-128x128" style="flex: 1;">
+                                <img src="Images/AAIT logo.png" alt="AAIT" class="logo-img">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Item 3 -->
+                <div class="column is-full">
+                    <div class="row">
+                        <div class="box is-flex">
+                            <div style="flex: 2;">
+                                <h2 class="subtitle is-size-3 is-size-6-mobile is-size-6-tablet is-size-5-desktop">&#10148; Other Certifications</h2>
+                                <p class="is-size-5 is-size-7-mobile is-size-6-tablet is-size-5-desktop">
+                                    &#9900; The Complete Web Developer Bootcamp.
+                                </p>
+                            </div>
+                            <figure class="image is-128x128" style="flex: 1;">
+                                <img src="Images/Udemy Logo.jpg" alt="Udemy" class="logo-img">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="button is-info is-rounded" id="backToTop" title="Go to top">&#10580;</button>
+
+    <!-- Footer -->
+    <footer class="footer has-background-dark" style="padding: 2rem 0;">
+        <div class="content has-text-centered has-text-white">
+            <p>&#169; 2023 Nobel Tibebe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bulma's JavaScript for Navbar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('.navbar-menu');
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+</html>
